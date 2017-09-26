@@ -1,0 +1,32 @@
+﻿<div class="panel panel-primary">
+    <div><a ng-href="index#/addCustomer">Add New Customer</a>
+    </div>
+    <div class="panel-heading"
+         style="font-size: large">
+        {{title}}
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr>
+                <td>Name</td>
+                <td>Address</td>
+                <td>Phone Number</td>
+                <td>Delete</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="customer in customers">
+                <td>
+                    <a ng-href="index#/editCustomer/{{customer.customerId}}">
+                        {{ customer.name}}
+                    </a>
+                </td>
+                <td>{{ customer.address}}</td>
+                <td>{{ customer.phoneNumber}}</td>
+                <td><button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="deleteCustomer(customer);">Delete</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

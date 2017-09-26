@@ -1,0 +1,49 @@
+﻿<div class="panel panel-primary">
+    <form class="form-horizontal">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Company info </legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Name">Name</label>  
+                <div class="col-md-4">
+                    <input id="Name" name="Name" type="text" placeholder="Name" class="form-control input-md" ng-model="customer.name">
+    
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Address">Address</label>  
+                <div class="col-md-4">
+                    <input id="Address" name="Address" type="text" placeholder="" class="form-control input-md" ng-model="customer.address">
+    
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Phone">Phone</label>  
+                <div class="col-md-4">
+                    <input id="Phone" name="Phone" type="text" placeholder="" class="form-control input-md" ng-model="customer.phoneNumber">
+    
+                </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>  
+                <div class="col-md-4">
+                    <button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="updateCustomer(customer);">Save</button>
+                    <button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="cancelEditCustomer();">Cancel</button>
+                   
+                </div>
+            </div>
+
+
+        </fieldset>
+    </form>
+
+</div>

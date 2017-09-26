@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/chatClient")
+    @Scripts.Render("~/bundles/chatClientLib")
+    <script src="/signalr/hubs"></script>
+    @Scripts.Render("~/bundles/chatClientJs")
+</head>
+<body>
+<div class="container body-content" ng-app="chatApp">
+    @RenderBody()
+</div>
+</body>
+</html>
+

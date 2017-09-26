@@ -1,0 +1,46 @@
+﻿ <div class="panel-heading">
+    <span class="glyphicon glyphicon-comment"></span> Pre Chat
+</div>
+<form class="form-horizontal">
+    <fieldset>
+        <!-- Form Name -->
+        <legend>Fill in Form </legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput-name">Name</label>  
+            <div class="col-md-6">
+                <input id="textinput-name" name="name" type="text" placeholder="Please enter your Name" class="form-control input-md" required="" ng-model="preChatQuestions.name">
+    
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput-email">Email</label>  
+            <div class="col-md-6">
+                <input id="textinput-email" name="emailAddress" type="text" placeholder="Please enter your email " class="form-control input-md" required="" ng-model="preChatQuestions.emailAddress">
+    
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput-reason">Reason</label>  
+            <div class="col-md-6">
+                <input id="textinput-reason" name="reason" type="text" placeholder="Please type here reason" class="form-control input-md" ng-model="preChatQuestions.reason">
+    
+            </div>
+        </div>
+        
+        <div class="panel-footer">
+            <div class="input-group">
+                <span class="input-group-btn text-center">
+                    <button class="btn btn-warning btn-sm" id="btn-chat-send" ng-click="preChatSave(preChatQuestions);">Send</button>
+                </span>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+

@@ -1,0 +1,32 @@
+﻿<div class="panel panel-primary">
+    <div><a ng-href="index#/addCustomer">Refresh</a>
+    </div>
+    <div class="panel-heading"
+         style="font-size: large">
+        {{title}}
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr>
+                <td>Chat Request Id</td>
+                <td>Name</td>
+                <td>Email Address</td>
+                <td>Reason</td>
+                <td>Operation</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="preChatRequest in preChatRequests">
+                <td>
+                    <a ng-href="index#/editCustomer/{{customer.chatRequestId}}">{{ preChatRequest.chatRequestId}}</a>
+                </td>
+                <td>{{ preChatRequest.name}}</td>
+                <td>{{ preChatRequest.emailAddress}}</td>
+                <td>{{ preChatRequest.reason}}</td>
+                <td><button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="startChat(preChatRequest);">Start</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
